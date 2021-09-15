@@ -1,0 +1,28 @@
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 350px;
+    width: 1100px;
+  }
+  .image2 {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Bottom right text */
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

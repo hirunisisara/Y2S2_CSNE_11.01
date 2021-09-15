@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+   
+    <title>test</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="background-color:#e0e4e7; padding-left:0; padding-right:0;">
+                <div class="q"  style="padding:20px 0;">
+                    <ul  >
+                        <li ><a href=""><h5>Edit Profile</h5></a></li>
+                    </ul>
+                    <ul>
+                        <li ><a href=""><h5>Change Password</h5></a></li>
+                    </ul>
+                    <ul>
+                        <li ><a href=""><h5>Notification</h5></a></li>
+                    </ul>
+                    <ul>
+                        <li ><a href=""><h5>Privacy and Security</h5></a></li>
+                    </ul>
+                    <ul>
+                        <li ><a href=""><h5>Login Activity</h5></a></li>
+                    </ul>
+                    <ul>
+                        <li ><a href=""><h5>Log Out</h5></a></li>
+                    </ul>
+                     
+                </div>
+            </div>
+            <div class="col-md-8" style="background-color:#f4faff; ">
+                <div class="q" style=" padding:20px 0; ">
+                    <div class="row" style="padding:20px;">
+                       <div class="col-md-3">
+                        <img src="pp.jpg" alt="" style="width:100%; border-radius:100px;">
+                       </div>
+                        <div class="col-md-9">
+                            <h3 style="color:#007bff; margin-top:50px;">Banuka Sandeepa</h3>
+                        </div>
+                    </div>
+
+                    <div class="row"  style="padding:20px;">
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">First Name</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name"> 
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Last name</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">User Name</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="User Name"> 
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"> 
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Phone Number</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone Number"> 
+                                </div>
+                                
+                                <button style="width:100%;" type="submit" class="btn btn-primary">Submit</button>
+                              </form>
+                        </div>
+                    </div>
+
+                    <div class="row"  style="padding:50px 20px;">
+                        <div class="col-md-12">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Order Details</th>
+                                    <th scope="col">Photo</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>1/03/2020</td>
+                                    <td>23</td>
+                                    <td>Detail_1</td>
+                                    <td>Photo_1</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>09/03/2020</td>
+                                    <td>54</td>
+                                    <td>Detail_2</td>
+                                    <td>Photo_2</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>1/09/2020</td>
+                                    <td>897</td>
+                                    <td>Detail_3</td>
+                                    <td>Photo_3</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              
+                              
+                        </div>
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+
+   
+ 
+
+</body>
+
+</html>

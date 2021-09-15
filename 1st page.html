@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>1.Broker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+	
+<script >
+function myFunction()
+{
+var group = document.radioForm.category;
+for (var i=0; i<group.length; i++) {
+if (group[i].checked)
+break;
+}
+if (i==group.length)
+return alert("Please select the type");
+
+}
+</script>
+	
+	
+	
+	<link rel="stylesheet" href="common_stylesheet.css"/>
+		<link rel="stylesheet" type="text/css" href="1.Broker.css">
+  </head>
+  <body>
+    <!--upper navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Sinhala</a>
+                        <a class="dropdown-item" href="#">Tamil</a>
+                        <a class="dropdown-item" href="#">English</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-weight-bold" href="test.html">Profile</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="chat-bubbles-with-ellipsis.png" style="width:25px;"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--logo bar-->
+    <div class="container-fluid " style="height: 120px; background-color: rgba(226, 226, 226, 0.507);">
+        <div class="row ">
+          <div class="col">
+            <a class="navbar-brand" href="HomePage.html"><img src="quick.png" style="width: 90%;"></a>
+          </div>
+          <div class="col-6 my-4">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="What are you looking for?" aria-label="What are you looking for?" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</button>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Woman's Fashion</a>
+                <a class="dropdown-item" href="#">Men's Fashion</a>
+                <a class="dropdown-item" href="#">Phones & Telecommunications</a>
+                <a class="dropdown-item" href="#">Computer, Office & Security</a>
+                <a class="dropdown-item" href="#">Consumer Electronics</a>
+                <a class="dropdown-item" href="#">Jewelry & Watches</a>
+                <a class="dropdown-item" href="#">Home, Pet & Appliances</a>
+                <a class="dropdown-item" href="#">Bags & Shoes</a>
+                <a class="dropdown-item" href="#">Toys, Kids & Babies</a>
+                <a class="dropdown-item" href="#">Outdoor Fun & Sports</a>
+                <a class="dropdown-item" href="#">Beauty, Health & Hair</a>
+                <a class="dropdown-item" href="#">Automobiles & Motorcycles</a>
+                <a class="dropdown-item" href="#">Home Improvement & Tools</a>
+            </div>
+            <a href="SearchResult.html" class="btn btn-primary" ><img src="search.svg" height="20px"></a>
+            </div>
+            </div>
+          </div>
+          <div class="col">
+            <a href="1st page.html" class="btn btn-outline-primary my-sm-4 w-50" style="margin-left: 25%;" type="submit"><img src="diff-added.svg" style="margin-right: 5%;"/>Post New Ad</a>
+          </div>
+        </div>
+      </div>
+    <!--body-->
+    
+<div id="form">
+
+<div class="fish" id="fish"></div>
+<div class="fish" id="fish2"></div>
+
+<form name="radioForm" id="waterform" action="2nd page.html" submit="return myFunction()" method="post"> 
+<h2>Select Type</h2>
+ <div class="rado">
+	<input class="clickS" type="radio" style="font-size:10px;" name="category" onclick="myFunction(this.value)" value="Seller">Seller<br>
+    <input class="clickBY" type="radio" name="category" onclick="myFunction(this.value)" value="Buyer">Buyer<br>
+    <input class="clickBRO" type="radio" name="category" onclick="myFunction(this.value)" value="Broker">Broker<br>
+    <input class="clickTO" type="radio" name="category" onclick="myFunction(this.value)" value="To-let">To-let<br><br>
+</div>
+
+<a href="2nd page.html">
+      <input type="submit" value="NEXT" onclick="myFunction()"/>
+     </a>
+	 </form>
+<!---<input type="submit"  href="2nd page.html"  value="NEXT" /> -->
+	
+</div>
+    <!--footer-->
+    <footer class="mt-2">
+      <div class="container-fluid padding btn-secondary">
+        <div class="row text-center">
+          <div class="col-md-3 shadow ">
+            <hr>
+            <h3>About</h3>
+            <hr>
+            <p>QuikAds and its affiliated websites are owned & operated by GoSourcing, a leader in Online Information, Buyer-Seller Networking platforms and operating in 4 continents of the world.</p>
+            <img src="quick_lg.png" style="width: 35%;">
+          </div>
+          <div class="col-md-3 shadow ">
+            <hr>
+            <h3>Information</h3>
+            <hr>
+            <ul style="list-style-type: none;">
+              <li id="footer_btn"><a href="HomePage.html" class="btn btn-primary" id="fbtn">Home</a></li>
+              <li id="footer_btn"><a href="#" class="btn btn-primary" id="fbtn">About Us</a></li>
+              <li id="footer_btn"><a href="#" class="btn btn-primary" id="fbtn">FAQ</a></li>
+              <li id="footer_btn"><a href="#" class="btn btn-primary" id="fbtn">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 shadow ">
+            <hr>
+            <h3>Payable Methods</h3>
+            <hr>
+            <div class="container align-items-center">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td><button class="btn btn-primary"><img src="visa.svg" style="width: 55%;"></button></td>
+                    <td><button class="btn btn-primary"><img src="master.svg" style="width: 55%;"></button></td>
+                    <td><button class="btn btn-primary"><img src="paypal.svg" style="width: 55%;"></button></td>
+                  </tr>
+                  <tr>
+                    <td><button class="btn btn-primary"><img src="amx.svg" style="width: 55%;"></button></td>
+                    <td><button class="btn btn-primary"><img src="webm.svg" style="width: 55%;"></button></td>
+                    <td><button class="btn btn-primary"><img src="bnkt.svg" style="width: 55%;"></button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-3 shadow ">
+            <hr>
+            <h3>Contact Us</h3>
+            <hr>
+            <ul style="list-style-type: none;">
+              <li id="footer_btn"><a href="#" class="btn btn-primary" id="fbtn"><img src="old-typical-phone.svg" style="width: 8%; margin-right: 5%;">Contact Number</a></li>
+              <li id="footer_btn"><a href="#" class="btn btn-primary" id="fbtn"><img src="google-play.svg" style="width: 8%;margin-right: 5%;">Google Play</a></li>
+              <li id="footer_btn"><a href="#" class="btn btn-primary" id="fbtn"><img src="app-store.svg" style="width: 8%;margin-right: 5%;">Apple store</a></li>
+              <li id="footer_btn"><a href="Inquiry.html" class="btn btn-primary" id="fbtn"><img src="inquiry.svg" style="width: 8%;margin-right: 5%;">Inquiry</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
